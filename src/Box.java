@@ -9,6 +9,12 @@ public class Box {
 
     }
 
+    void setDim(double w, double h, double d){
+        this.width=w;
+        this.height=h;
+        this.depth=d;
+    }
+
 
     static class boxDemo3{
 
@@ -30,10 +36,11 @@ public class Box {
         mybox2.depth =3;
 
 
+        mybox1.setDim(18,22,45);
         double vol1 = mybox1.volume();
         double vol2 = mybox2.volume();
 
-        System.out.println(vol2);
+        System.out.println(vol1);
     }
     }
 }
